@@ -1,0 +1,50 @@
+<%- contentFor('body') %>
+<header>
+    <nav>
+        <div class="nav-wrapper" style="background: #ab1e2f">
+            <div class="brand-logo center">Combate</div>
+            <div class="timer">
+                <span id="time">03:00</span>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="row">
+        <div class="col s12">
+            <h2 style="text-align: center"><b>Placar</b></h2>
+        </div>
+        <div class="col s5">
+            <h3 id="score-1" style="text-align: right; color: #263bd6">0</h3>
+        </div>
+        <div class="col s2">
+            <h3 style="text-align: center"><b>:</b></h3>
+        </div>
+        <div class="col s5">
+            <h3 id="score-2" style="text-align: left; color: #d6263b">0</h3>
+        </div>
+        <div class="col s6">
+            <h3 style="text-align: center"><b>Robô 1</b></h3>
+        </div>
+        <div class="col s6">
+            <h3 style="text-align: center"><b>Robô 2</b></h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s6"><a class="waves-effect waves-light btn" style="width: 100%; background: #263bd6" onclick="changeText1();" id="dano-1">Dano</a></div>
+        <div class="col s6"><a class="waves-effect waves-light btn" style="width: 100%; background: #d6263b" onclick="changeText2();" id="dano-2">Dano</a></div>
+    </div>
+    <div class="row">
+        <div class="col s6"><a class="waves-effect waves-light btn" style="width: 100%; background: #1e2fab" onclick="changeText3();" id="agressividade-1">Agressividade</a></div>
+        <div class="col s6"><a class="waves-effect waves-light btn" style="width: 100%; background: #ab1e2f" onclick="changeText4();" id="agressividade-2">Agressividade</a></div>
+    </div>
+    <div class="row">
+        <div class="col s6"><a class="waves-effect waves-light btn" style="width: 100%; background: #162380" onclick="countdown();" id="nocaute-1">Nocaute</a></div>
+        <div class="col s6"><a class="waves-effect waves-light btn" style="width: 100%; background: #801623" onclick="countdown();" id="nocaute-2">Nocaute</a></div>
+    </div>
+
+    <div id="countdown" class="container">
+        
+    </div>
+</main>
